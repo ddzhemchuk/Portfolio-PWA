@@ -30,7 +30,7 @@ const Link = styled(DefaultLink)`
 
   .logo__name {
     font-weight: 600;
-    font-size: clamp(1.25rem, 1.6666666667vw, 1.5rem);
+    font-size: clamp(1.15rem, 1.6666666667vw, 1.5rem);
   }
 
   .logo__title {

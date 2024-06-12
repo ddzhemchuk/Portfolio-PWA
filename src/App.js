@@ -12,8 +12,29 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     children: [
       { index: true, element: <HomePage /> },
-      { path: "portfolio", element: <PortfolioPage /> },
+
       { path: "contact", element: <ContactPage /> },
+      {
+        path: "portfolio",
+        element: <PortfolioPage />,
+        loader: async () => {
+          try {
+            const response = await fetch("/assets/projects.json", {
+              cache: "no-store",
+            });
+
+            if (!response.ok) {
+              throw new Error("Failed to fetch projects");
+            }
+
+            const data = await response.json();
+            return data;
+          } catch (err) {
+            console.error(err);
+            return [];
+          }
+        },
+      },
     ],
   },
 ]);

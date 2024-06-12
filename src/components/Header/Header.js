@@ -24,6 +24,11 @@ const menuLinks = [
 
 const HeaderContainer = styled.header`
   padding: clamp(0.5rem, 3.47vw, 3.125rem) clamp(0.5rem, 3.47vw, 3.125rem) 0;
+  transition: 0.3s;
+
+  @media only screen and (max-width: 96.25rem) {
+    padding: clamp(0.5rem, 3.47vw, 3.125rem) clamp(0.5rem, 1.5625vw, 1rem) 0;
+  }
 
   .container {
     display: flex;

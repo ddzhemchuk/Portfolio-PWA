@@ -75,6 +75,12 @@ const Section = styled.section`
     padding: 0 1rem;
     margin-bottom: 1rem;
     font-weight: 600;
+
+    @media only screen and (min-width: 37.5rem) {
+      br {
+        display: none;
+      }
+    }
   }
 
   .hero__subtitle {
@@ -111,10 +117,10 @@ const Section = styled.section`
 
 export default function Hero({ children }) {
   const scrollToContent = () => {
-    const main = document.querySelector("main");
+    const main = document.querySelector(".hero_bg");
 
     if (main) {
-      document.querySelector("main").scrollIntoView({ behavior: "smooth" });
+      window.scrollBy(0, main.offsetHeight);
     }
   };
 
@@ -125,7 +131,8 @@ export default function Hero({ children }) {
 
         <div className="hero__wrapper">
           <h2 className="hero__title" aria-label="Where Ideas Take Flight">
-            Where Ideas Take <span className="text-cta">Flight</span>
+            Where Ideas <br />
+            Take <span className="text-cta">Flight</span>
           </h2>
           <p className="hero__subtitle">
             building web apps that make a difference
