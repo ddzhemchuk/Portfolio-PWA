@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import { createPortal } from "react-dom";
 import styled from "styled-components";
 import MobileButton from "./UI/MobileButton";
 import MenuLink from "./UI/MenuLink";
@@ -101,7 +100,7 @@ export default function MobileMenu({ showMenu, setShowMenu }) {
     }
   }, [showMenu]);
 
-  return createPortal(
+  return (
     <Dialog
       ref={ref}
       onCancel={(e) => {
@@ -118,7 +117,13 @@ export default function MobileMenu({ showMenu, setShowMenu }) {
       <div className="mobile-menu__content">
         <menu className="menu">
           {menuLinks.map((link, index) => (
-            <MenuLink {...link} key={index} />
+            <MenuLink
+              {...link}
+              key={index}
+              onClick={() => {
+                setShowMenu(false);
+              }}
+            />
           ))}
         </menu>
         <MobileButton
@@ -135,11 +140,13 @@ export default function MobileMenu({ showMenu, setShowMenu }) {
           to="/contact"
           className="cta white menu__contact"
           aria-label="Send a message to get in touch"
+          onClick={() => {
+            setShowMenu(false);
+          }}
         >
           Get in touch
         </Link>
       </div>
-    </Dialog>,
-    document.getElementById("mobile-menu")
+    </Dialog>
   );
 }

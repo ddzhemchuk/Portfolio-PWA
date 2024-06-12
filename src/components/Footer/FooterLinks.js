@@ -13,7 +13,7 @@ const LINKS = [
         to: "/portfolio",
       },
       {
-        title: "Contacts",
+        title: "Contact",
         to: "/contact",
       },
     ],

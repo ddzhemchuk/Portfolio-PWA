@@ -2,10 +2,16 @@ import { Outlet, useLocation } from "react-router-dom";
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
 import Footer from "../components/Footer/Footer";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import MobileMenu from "../components/MobileMenu";
 
 export default function RootLayout() {
-  const location = useLocation();
+  const { pathname } = useLocation();
+  const [showMenu, setShowMenu] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   useEffect(() => {
     document.querySelector("body").classList = "loaded";
@@ -13,11 +19,11 @@ export default function RootLayout() {
 
   return (
     <>
-      {location.pathname !== "/" ? (
-        <Header />
+      {pathname !== "/" ? (
+        <Header setShowMenu={setShowMenu} />
       ) : (
         <Hero>
-          <Header className="header" />
+          <Header className="header" setShowMenu={setShowMenu} />
         </Hero>
       )}
 
@@ -26,6 +32,8 @@ export default function RootLayout() {
       </main>
 
       <Footer />
+
+      <MobileMenu showMenu={showMenu} setShowMenu={setShowMenu} />
     </>
   );
 }
