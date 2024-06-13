@@ -14,7 +14,7 @@ const Section = styled.section`
 `;
 
 export default function Projects({ projects }) {
-    console.log(projects)
+
   return (
     <Section>
       <div className="container">
