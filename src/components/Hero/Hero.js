@@ -114,7 +114,11 @@ export default function Hero({ children, className = "" }) {
     const main = document.querySelector(".hero_bg");
 
     if (main) {
-      window.scrollBy(0, main.offsetHeight);
+      window.scrollBy({
+        top: main.clientHeight,
+        left: 0,
+        behavior: "smooth",
+      });
     }
   };
 
