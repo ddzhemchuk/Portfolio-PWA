@@ -73,6 +73,7 @@ const Section = styled.section`
     padding: 0.75rem 0;
     border: none;
     border-bottom: 0.0625rem solid var(--white-25);
+    border-radius: 0;
   }
 
   .form__input--textarea {
