@@ -5,11 +5,17 @@ import ContactPage from "./pages/ContactPage";
 import "./assets/styles/reset.css";
 import "./assets/styles/main.css";
 import RootLayout from "./layouts/RootLayout";
+import ErrorPage from "./pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
+    errorElement: (
+      <RootLayout>
+        <ErrorPage />
+      </RootLayout>
+    ),
     children: [
       { index: true, element: <HomePage /> },
 
@@ -28,10 +34,10 @@ const router = createBrowserRouter([
             }
 
             const data = await response.json();
-            return data;
+            return { success: true, data: { ...data } };
           } catch (err) {
             console.error(err);
-            return [];
+            return { success: false };
           }
         },
       },

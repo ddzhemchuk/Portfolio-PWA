@@ -1,1 +1,354 @@
-[]
+{
+    "projects": [
+        {
+            "name": "Portfolio Site",
+            "description": "A portfolio site to showcase my work. Built with React and is a PWA. Perfect Lighthouse score. Design and coded by me.",
+            "technologies": ["React", "PWA", "UI/UX"],
+            "image": "/assets/projects/portfolio-site.png",
+            "date": "05/2024",
+            "links": [
+                {
+                    "title": "Demo",
+                    "url": "https://dzhemchuk.dev",
+                    "type": "cta"
+                },
+                {
+                    "title": "Git",
+                    "url": "https://github.com/ddzhemchuk/Portfolio-PWA"
+                },
+                {
+                    "title": "Design",
+                    "url": "https://www.figma.com/design/pEXYxwfYgAtI5CWxJwbhfn/MAD9013-Final?node-id=0-1&t=5PzFeitRUdxv88FT-1"
+                }
+            ]    
+        },
+        {
+            "name": "IELTS Advisor",
+            "description": "A responsive and accessible landing page for an English learning platform. Built with React, Redux and React Router. Still in development.",
+            "technologies": ["React", "Router", "Redux"],
+            "image": "/assets/projects/ielts-advisor.png",
+            "date": "04/2024",
+            "links": [
+                {
+                    "title": "Demo",
+                    "url": "https://ielts-advisor.dzhemchuk.dev",
+                    "type": "cta"
+                },
+                {
+                    "title": "Prod",
+                    "url": "http://ieltsadvisor.com/"
+                },
+                {
+                    "title": "Git",
+                    "type": "private"
+                }
+            ]    
+        },
+        {
+            "name": "GolemMarket",
+            "description": "A full-featured e-commerce platform for Minecraft server owners. Built with Next.js, utilizes JWT, interacts with API backend, and stores data in MySQL. This is a full-stack project.",
+            "technologies": ["Next.js", "JWT", "API", "MySQL"],
+            "image": "/assets/projects/golem-market.png",
+            "date": "09/2023",
+            "links": [
+                {
+                    "title": "Demo",
+                    "url": "https://golemmarket.com/",
+                    "type": "cta"
+                },
+                {
+                    "title": "Git",
+                    "type": "private"
+                }
+            ]    
+        },
+        {
+            "name": "BadLand",
+            "description": "Minecraft Perk Store web application using React.js and Redux for state management. Seamless data flow between frontend and PHP backend using RESTful API (JSON).",
+            "technologies": ["React", "API"],
+            "image": "/assets/projects/badland.png",
+            "date": "02/2024",
+            "links": [
+                {
+                    "title": "Demo",
+                    "url": "https://badland.su/",
+                    "type": "cta"
+                },
+                {
+                    "title": "Git",
+                    "url": "https://github.com/ddzhemchuk/BadLand"
+                }
+            ]    
+        },
+        {
+            "name": "KabelTorgMarket",
+            "description": "Responsive, multi-page website for a cable & wire supplier, featuring a secure API backend that communicates with a MySQL database. Frontend and backend are built with Next.js.",
+            "technologies": ["Next.js", "JWT", "API", "MySQL"],
+            "image": "/assets/projects/kabeltorg-market.png",
+            "date": "07/2023",
+            "links": [
+                {
+                    "title": "Demo",
+                    "url": "https://kabelopttorg.ru",
+                    "type": "cta"
+                },
+                {
+                    "title": "Git",
+                    "url": "https://gitlab.com/dzhemchuk/kabeltorgmarket"
+                }
+            ]    
+        },
+        {
+            "name": "RPMserver",
+            "description": "One of the first React projects: Minecraft Perk Store web application for a gaming server. Utilizes Redux for state management and interacts with a PHP backend via RESTful API.",
+            "technologies": ["React", "Router", "Redux", "UI/UX"],
+            "image": "/assets/projects/rpmserver.png",
+            "date": "02/2023",
+            "links": [
+                {
+                    "title": "Demo",
+                    "url": "https://rpmserver.com",
+                    "type": "cta"
+                },
+                {
+                    "title": "Figma",
+                    "url": "https://www.figma.com/design/sGGbxTwhENCSqSJMvtOkvm/RPM?node-id=0-1&t=KKMxMGzqkVCGXNgZ-1"
+                },
+                {
+                    "title": "Git",
+                    "type": "private"
+                }
+            ]    
+        }
+    ],
+    "archive": [
+        {
+            "name": "Photo Search & Save SPA",
+            "description": "Final project for the MAD9014 course in college. A single-page application that allows users to search for photos and save them to their collection.",
+            "date": "04/2024",
+            "technologies": ["JS"],
+            "links": [
+                {
+                    "url": "https://dzhe0001.github.io/mad9014-w24-finalProject",
+                    "type": "external"
+                },
+                {
+                    "url": "https://github.com/dzhe0001/mad9014-w24-finalProject",
+                    "type": "github"
+                }
+            ]
+        },
+        {
+            "name": "Cocktail Collection",
+            "description": "Simple SPA that fetches cocktails from API and displays it. College assignment.",
+            "date": "04/2024",
+            "technologies": ["JS"],
+            "links": [
+                {
+                    "url": "https://github.com/dzhe0001/mad9014-w24-cocktail-collection",
+                    "type": "github"
+                }
+            ]
+        },
+        {
+            "name": "University of Parenthood",
+            "description": "Website for the consultation center \"University of Parenthood\". Utilizes vanilla HTML, CSS, JS and PHP.",
+            "date": "2023",
+            "technologies": ["HTML", "CSS", "JS"],
+            "links": [
+                {
+                    "url": "https://ur.kpfu.ru",
+                    "type": "external"
+                }
+            ]
+        },
+        {
+            "name": "MajorCore Promo",
+            "description": "Promo landing page for a hosting provider. Built with React.",
+            "date": "2023",
+            "technologies": ["React"],
+            "links": [
+                {
+                    "url": "https://gitlab.com/dzhemchuk/majorcore-vps-le-landing",
+                    "type": "gitlab"
+                }
+            ]
+        },
+        {
+            "name": "WIM - Project Nostalgia",
+            "description": "A website for a gaming server. Fully built from scratch using Next.js. Recreation of the original website from early 2010s, using modern technologies.",
+            "date": "2023",
+            "technologies": ["Next.js"],
+            "links": [
+                {
+                    "url": "https://wim.su",
+                    "type": "external"
+                },
+                {
+                    "url": "https://gitlab.com/dzhemchuk/wim-project-nostalgia",
+                    "type": "gitlab"
+                }
+            ]
+        },
+        {
+            "name": "Reenbit Test",
+            "description": "Test task for an interview. A simple React app that fetches data from an API and displays it.",
+            "date": "2023",
+            "technologies": ["React"],
+            "links": [
+                {
+                    "url": "https://reenbit.dzhemchuk.dev",
+                    "type": "external"
+                },
+                {
+                    "url": "https://gitlab.com/dzhemchuk/reenbit-test",
+                    "type": "gitlab"
+                }
+            ]
+        },
+        {
+            "name": "MajorShow SPA",
+            "description": "The first React project. SPA for an online store of a professional lighting equipment supplier. Built with React.",
+            "date": "2022",
+            "technologies": ["React"],
+            "links": [
+                {
+                    "url": "https://majorshow.dzhemchuk.dev/",
+                    "type": "external"
+                },
+                {
+                    "url": "https://gitlab.com/dzhemchuk/majorshow-spa",
+                    "type": "gitlab"
+                }
+            ]
+        },
+        {
+            "name": "Nurse on Call",
+            "description": "Multilangual Wordpress website for a medical service. Custom theme and plugins.",
+            "date": "2022",
+            "technologies": ["Wordpress", "jQuery"],
+            "links": [
+                {
+                    "url": "https://medsestra.kiev.ua/",
+                    "type": "external"
+                }
+            ]
+        },
+        {
+            "name": "MajorCore",
+            "description": "One of the first websites I've built. A website for a hosting company. Built on WordPress with a custom theme.",
+            "date": "2018",
+            "technologies": ["Wordpress", "jQuery"],
+            "links": [
+                {
+                    "url": "https://majorcore.com",
+                    "type": "external"
+                }
+            ]
+        },
+        {
+            "name": "Baustoffe Steverding",
+            "description": "Just a responsive markup from PSD/Figma design. No backend, no interaction, just HTML, CSS, JS. One of the first projects. Utilizes not the best practices.",
+            "date": "Sometime in the past",
+            "technologies": ["HTML", "CSS"],
+            "links": [
+                {
+                    "url": "https://steverding.dzhemchuk.dev",
+                    "type": "external"
+                },
+                {
+                    "url": "https://gitlab.com/dzhemchuk/baustoffe-steverding",
+                    "type": "gitlab"
+                }
+            ]
+        },
+        {
+            "name": "Polar Anticheat",
+            "description": "Just a responsive markup from PSD/Figma design. No backend, no interaction, just HTML, CSS, JS. One of the first projects. Utilizes not the best practices.",
+            "date": "Sometime in the past",
+            "technologies": ["HTML", "CSS"],
+            "links": [
+                {
+                    "url": "https://polar.dzhemchuk.dev",
+                    "type": "external"
+                },
+                {
+                    "url": "https://gitlab.com/dzhemchuk/polar",
+                    "type": "gitlab"
+                }
+            ]
+        },
+        {
+            "name": "HuntX",
+            "description": "Just a responsive markup from PSD/Figma design. No backend, no interaction, just HTML, CSS, JS. One of the first projects. Utilizes not the best practices.",
+            "date": "Sometime in the past",
+            "technologies": ["HTML", "CSS"],
+            "links": [
+                {
+                    "url": "https://huntx.dzhemchuk.dev",
+                    "type": "external"
+                },
+                {
+                    "url": "https://gitlab.com/dzhemchuk/huntx",
+                    "type": "gitlab"
+                }
+            ]
+        },
+        {
+            "name": "Evoy",
+            "description": "Just a responsive markup from PSD/Figma design. No backend, no interaction, just HTML, CSS, JS. One of the first projects. Utilizes not the best practices.",
+            "date": "Sometime in the past",
+            "technologies": ["HTML", "CSS"],
+            "links": [
+                {
+                    "url": "https://evoy.dzhemchuk.dev",
+                    "type": "external"
+                }
+            ]
+        },
+        {
+            "name": "Roman Elsukov",
+            "description": "Just a responsive markup from PSD/Figma design. No backend, no interaction, just HTML, CSS, JS. One of the first projects. Utilizes not the best practices.",
+            "date": "Sometime in the past",
+            "technologies": ["HTML", "CSS"],
+            "links": [
+                {
+                    "url": "https://roman-elsukov.dzhemchuk.dev",
+                    "type": "external"
+                },
+                {
+                    "url": "https://gitlab.com/dzhemchuk/elsukov",
+                    "type": "gitlab"
+                }
+            ]
+        },
+        {
+            "name": "Vbitve",
+            "description": "Just a responsive markup from PSD/Figma design. No backend, no interaction, just HTML, CSS, JS. One of the first projects. Utilizes not the best practices.",
+            "date": "Sometime in the past",
+            "technologies": ["HTML", "CSS"],
+            "links": [
+                {
+                    "url": "http://vbitve.dzhemchuk.dev",
+                    "type": "external"
+                }
+            ]
+        },
+        {
+            "name": "Universium",
+            "description": "Just a responsive markup from PSD/Figma design. No backend, no interaction, just HTML, CSS, JS. One of the first projects. Utilizes not the best practices.",
+            "date": "Sometime in the past",
+            "technologies": ["HTML", "CSS"],
+            "links": [
+                {
+                    "url": "https://universium.dzhemchuk.dev",
+                    "type": "external"
+                },
+                {
+                    "url": "https://gitlab.com/dzhemchuk/universium",
+                    "type": "gitlab"
+                }
+            ]
+        }
+    ]
+}

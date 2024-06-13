@@ -5,7 +5,7 @@ import Footer from "../components/Footer/Footer";
 import { useEffect, useState } from "react";
 import MobileMenu from "../components/MobileMenu";
 
-export default function RootLayout() {
+export default function RootLayout({ children }) {
   const { pathname } = useLocation();
   const [showMenu, setShowMenu] = useState(false);
 
@@ -27,9 +27,7 @@ export default function RootLayout() {
         </Hero>
       )}
 
-      <main>
-        <Outlet />
-      </main>
+      <main>{children ? children : <Outlet />}</main>
 
       <Footer />
 
