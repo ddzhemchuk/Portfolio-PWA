@@ -164,7 +164,6 @@ export default function Project({
       <div className="project__image">
         <picture>
           <source
-            src={image.webp}
             srcSet={`${image.webp} 982w`}
             type="image/webp"
           />
