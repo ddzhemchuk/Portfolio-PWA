@@ -2,7 +2,7 @@
     "projects": [
         {
             "name": "Portfolio Site",
-            "description": "A portfolio site to showcase my work. Built with React and is a PWA. Perfect Lighthouse score. Design and coded by me.",
+            "description": "A portfolio site to showcase my work. Built with React and is a PWA. Perfect Lighthouse score. Designed and coded by me.",
             "technologies": ["React", "PWA", "UI/UX"],
             "image": {
                 "png": "/assets/projects/portfolio-site.png",
