@@ -1,6 +1,5 @@
 import { Outlet, useLocation } from "react-router-dom";
 import Header from "../components/Header/Header";
-import Hero from "../components/Hero/Hero";
 import Footer from "../components/Footer/Footer";
 import { useEffect, useState } from "react";
 import MobileMenu from "../components/MobileMenu";
@@ -19,13 +18,10 @@ export default function RootLayout({ children }) {
 
   return (
     <>
-      {pathname !== "/" ? (
-        <Header setShowMenu={setShowMenu} />
-      ) : (
-        <Hero>
-          <Header className="header" setShowMenu={setShowMenu} />
-        </Hero>
-      )}
+      <Header
+        setShowMenu={setShowMenu}
+        className={pathname !== "/" ? "secondary" : null}
+      />
 
       <main>{children ? children : <Outlet />}</main>
 
