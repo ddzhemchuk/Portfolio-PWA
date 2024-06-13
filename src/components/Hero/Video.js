@@ -50,26 +50,16 @@ export default function Video() {
         }
       }
 
-      
       if (!src) {
         return setVideo(videoFallback());
       }
 
       try {
-        const cache = await caches.open("dzhemchuk.dev");
-        const response = await cache.match(src);
+        const resp = await fetch(src);
+        if (!resp.ok) throw new Error("Failed to load video");
 
-        if (response) {
-          const blob = await response.blob();
-          setVideo(videoElement(URL.createObjectURL(blob)));
-        } else {
-          const resp = await fetch(src);
-          if (!resp.ok) throw new Error("Failed to load video");
-
-          const blob = await resp.blob();
-          setVideo(videoElement(URL.createObjectURL(blob)));
-          cache.put(src, new Response(blob));
-        }
+        const blob = await resp.blob();
+        setVideo(videoElement(URL.createObjectURL(blob)));
       } catch (e) {
         setVideo(videoFallback());
       }

@@ -46,7 +46,7 @@ const Section = styled.section`
     width: 100%;
 
     @media only screen and (min-width: 62rem) {
-      width: auto;
+      max-width: 48rem;
     }
   }
 
@@ -165,7 +165,12 @@ export default function ContactPage() {
         setMsg(data.message);
       }
     } catch (error) {
-      setMsg("An error occurred. Please try again later.");
+      if (navigator.onLine) {
+        setMsg("An error occurred. Please try again later.");
+      } else {
+        setMsg("Your browser is offline. Please check your internet connection.");
+      }
+
       console.error(error);
     }
   };

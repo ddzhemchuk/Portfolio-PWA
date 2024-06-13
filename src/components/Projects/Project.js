@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import ProjectBtn from "./ProjectBtn";
-import ProjectImage from "./ProjectImage";
 
 const Li = styled.li`
   background: var(--white-10);
@@ -162,7 +161,22 @@ export default function Project({
           ))}
         </ul>
       </div>
-      <ProjectImage image={image} name={name} />
+      <div className="project__image">
+        <picture>
+          <source
+            src={image.webp}
+            srcSet={`${image.webp} 982w`}
+            type="image/webp"
+          />
+          <img
+            src={image.png}
+            srcSet={`${image.png} 982w`}
+            alt={name}
+            decoding="async"
+            sizes="(min-width: 728px) 850px, (min-width: 1024px) 580px, (min-width: 1440px) 800px, 470px"
+          />
+        </picture>
+      </div>
     </Li>
   );
 }

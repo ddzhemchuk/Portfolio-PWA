@@ -25,9 +25,7 @@ const router = createBrowserRouter([
         element: <PortfolioPage />,
         loader: async () => {
           try {
-            const response = await fetch("/assets/projects.json", {
-              cache: "no-store",
-            });
+            const response = await fetch("/assets/projects.json");
 
             if (!response.ok) {
               throw new Error("Failed to fetch projects");

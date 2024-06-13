@@ -4,7 +4,10 @@
             "name": "Portfolio Site",
             "description": "A portfolio site to showcase my work. Built with React and is a PWA. Perfect Lighthouse score. Design and coded by me.",
             "technologies": ["React", "PWA", "UI/UX"],
-            "image": "/assets/projects/portfolio-site.png",
+            "image": {
+                "png": "/assets/projects/portfolio-site.png",
+                "webp": "/assets/projects/portfolio-site.webp"
+            },
             "date": "05/2024",
             "links": [
                 {
@@ -26,7 +29,10 @@
             "name": "IELTS Advisor",
             "description": "A responsive and accessible landing page for an English learning platform. Built with React, Redux and React Router. Still in development.",
             "technologies": ["React", "Router", "Redux"],
-            "image": "/assets/projects/ielts-advisor.png",
+            "image": {
+                "png": "/assets/projects/ielts-advisor.png",
+                "webp": "/assets/projects/ielts-advisor.webp"
+            },
             "date": "04/2024",
             "links": [
                 {
@@ -48,7 +54,10 @@
             "name": "GolemMarket",
             "description": "A full-featured e-commerce platform for Minecraft server owners. Built with Next.js, utilizes JWT, interacts with API backend, and stores data in MySQL. This is a full-stack project.",
             "technologies": ["Next.js", "JWT", "API", "MySQL"],
-            "image": "/assets/projects/golem-market.png",
+            "image": {
+                "png": "/assets/projects/golem-market.png",
+                "webp": "/assets/projects/golem-market.webp"
+            },
             "date": "09/2023",
             "links": [
                 {
@@ -66,7 +75,10 @@
             "name": "BadLand",
             "description": "Minecraft Perk Store web application using React.js and Redux for state management. Seamless data flow between frontend and PHP backend using RESTful API (JSON).",
             "technologies": ["React", "API"],
-            "image": "/assets/projects/badland.png",
+            "image": {
+                "png": "/assets/projects/badland.png",
+                "webp": "/assets/projects/badland.webp"
+            },
             "date": "02/2024",
             "links": [
                 {
@@ -84,7 +96,10 @@
             "name": "KabelTorgMarket",
             "description": "Responsive, multi-page website for a cable & wire supplier, featuring a secure API backend that communicates with a MySQL database. Frontend and backend are built with Next.js.",
             "technologies": ["Next.js", "JWT", "API", "MySQL"],
-            "image": "/assets/projects/kabeltorg-market.png",
+            "image": {
+                "png": "/assets/projects/kabeltorgmarket.png",
+                "webp": "/assets/projects/kabeltorgmarket.webp"
+            },
             "date": "07/2023",
             "links": [
                 {
@@ -102,7 +117,10 @@
             "name": "RPMserver",
             "description": "One of the first React projects: Minecraft Perk Store web application for a gaming server. Utilizes Redux for state management and interacts with a PHP backend via RESTful API.",
             "technologies": ["React", "Router", "Redux", "UI/UX"],
-            "image": "/assets/projects/rpmserver.png",
+            "image": {
+                "png": "/assets/projects/rpmserver.png",
+                "webp": "/assets/projects/rpmserver.webp"
+            },
             "date": "02/2023",
             "links": [
                 {

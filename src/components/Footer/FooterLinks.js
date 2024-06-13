@@ -33,7 +33,7 @@ const LINKS = [
       },
       {
         title: "Download CV",
-        to: "/files/CV.pdf",
+        to: "/assets/CV.pdf",
       },
     ],
   },
