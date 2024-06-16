@@ -73,7 +73,6 @@ const HeaderContainer = styled.header`
 `;
 
 export default function Header({ className, setShowMenu }) {
-console.log(className);
   return (
     <Hero className={className}>
       <HeaderContainer>

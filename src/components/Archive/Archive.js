@@ -29,12 +29,12 @@ export default function Archive({ projects }) {
         <div className="title-group">
           <h2
             className="title-group__title"
-            aria-label="What I've Been Building: Recent Projects "
+            aria-label="Evolution in Code: Archived Projects "
           >
-            What I've Been Building: <span>Recent Projects </span>
+            Evolution in Code: <span>Archived Projects </span>
           </h2>
           <p className="title-group__subtitle">
-            Showcasing my expertise in web development and design
+            A look back. Code that helped me grow
           </p>
         </div>
         <ul className="projects">

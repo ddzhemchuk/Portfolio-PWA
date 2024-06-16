@@ -71,17 +71,53 @@ self.addEventListener("message", (event) => {
 });
 
 // Any other custom service worker logic can go here.
+const version = 4;
+const project = "dzemchuk.dev";
+const cacheName = `${project}-${version}`;
+const bypassCache = ["/assets/projects.json"];
+
+self.addEventListener("activate", (ev) => {
+  ev.waitUntil(
+    caches.keys().then((keys) => {
+      const oldCaches = [];
+
+      keys.forEach((cache) => {
+        if (!cache.includes(project)) return;
+
+        if (cache !== cacheName) {
+          oldCaches.push(caches.delete(cache));
+        }
+      });
+
+      return Promise.all(oldCaches);
+    })
+  );
+});
+
 self.addEventListener("fetch", (event) => {
   event.respondWith(
     caches.match(event.request).then((resp) => {
       if (resp) {
-        return resp;
+        if (!navigator.onLine) {
+          return resp;
+        }
+
+        const isByPass = bypassCache.some((url) =>
+          event.request.url.includes(url)
+        );
+
+        if (isByPass) {
+          return fetch(event.request);
+        } else {
+          return resp;
+        }
       }
+
       return fetch(event.request).then((response) => {
         const clonnedResponse = response.clone();
 
         caches
-          .open("dzemchuk.dev")
+          .open(cacheName)
           .then((cache) => cache.put(event.request, clonnedResponse));
 
         return response;
